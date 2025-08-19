@@ -1,16 +1,94 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Waterloo Track - First-Party Attribution That Actually Works">
+	<main>
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="container">
+				<h1>First-Party Attribution<br>That Actually Works</h1>
+				<p>Stop guessing which ads drive revenue. Own your data with privacy-compliant server-side tracking that's simple to implement.</p>
+				<a href="/for-agencies" class="btn">Get Started</a>
+			</div>
+		</section>
+
+		<!-- Problem Section -->
+		<section class="section">
+			<div class="container">
+				<h2>Your Attribution is Probably Broken</h2>
+				<p>iOS updates, privacy laws, and ad blockers have created blind spots in every marketing stack. You're making million-dollar decisions with about 70% of the data.</p>
+				
+				<div style="display: grid; gap: 30px; margin: 40px 0;">
+					<div style="padding: 25px; background: #f8f9fa; border-radius: 8px;">
+						<h3 style="color: #7cd3d2; margin-bottom: 10px;">Missing Conversions</h3>
+						<p style="margin: 0;">30% of your customers are invisible to your tracking. They're buying, but your platforms can't see them.</p>
+					</div>
+					<div style="padding: 25px; background: #f8f9fa; border-radius: 8px;">
+						<h3 style="color: #7cd3d2; margin-bottom: 10px;">False Attribution</h3>
+						<p style="margin: 0;">Platforms take credit for conversions they didn't drive. Your worst campaigns look like winners.</p>
+					</div>
+					<div style="padding: 25px; background: #f8f9fa; border-radius: 8px;">
+						<h3 style="color: #7cd3d2; margin-bottom: 10px;">Wasted Budget</h3>
+						<p style="margin: 0;">You're scaling losing campaigns and killing winning ones because the data is wrong.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Solution Section -->
+		<section class="section section-alt">
+			<div class="container">
+				<h2>The Only Attribution Platform Where You Own Your Data AND Can Actually Use It</h2>
+				<p>We built Waterloo Track for businesses that need real attribution without the complexity of enterprise platforms.</p>
+				
+				<div style="display: grid; gap: 40px; margin-top: 60px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+					<div>
+						<h3>For Marketing Agencies</h3>
+						<p>Get credit for your wins. Turn every client into recurring revenue. Stop losing accounts to attribution gaps.</p>
+						<a href="/for-agencies" class="btn">Learn More</a>
+					</div>
+					<div>
+						<h3>For Business Owners</h3>
+						<p>Know if your ads actually work in 10 minutes. Stop paying for marketing based on faith and start using facts.</p>
+						<a href="/for-business-owners" class="btn">Learn More</a>
+					</div>
+					<div>
+						<h3>For Marketing Directors</h3>
+						<p>Turn data chaos into boardroom confidence. Get attribution that finance actually trusts.</p>
+						<a href="/for-marketing-directors" class="btn">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social Proof Section -->
+		<section class="section">
+			<div class="container">
+				<h2>Trusted by Growing Businesses</h2>
+				<p>We've helped businesses achieve clear attribution for companies including Duarte Inc, The Army National Guard, and The Peach Truck.</p>
+				
+				<div style="display: grid; gap: 30px; margin-top: 40px;">
+					<div style="background: white; padding: 30px; border-radius: 8px; border-left: 4px solid #7cd3d2;">
+						<p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px; font-style: italic;">"First month, we found massive waste across our accounts. Reallocated it. Clients thought we were geniuses. We just finally had real data."</p>
+						<p style="font-weight: 600;">Digital Marketing Agency</p>
+					</div>
+					
+					<div style="background: white; padding: 30px; border-radius: 8px; border-left: 4px solid #7cd3d2;">
+						<p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px; font-style: italic;">"I was about to shut down all my ads. Turns out, half were garbage but half were gold. Revenue up 40% in eight weeks."</p>
+						<p style="font-weight: 600;">E-commerce Business Owner</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="hero">
+			<div class="container">
+				<h2>Ready to See What's Really Working?</h2>
+				<p>Get clear attribution in 7 days, not 7 weeks. Completely done-for-you setup.</p>
+				<a href="/contact" class="btn">Get Your Free Audit</a>
+			</div>
+		</section>
+	</main>
+</Layout>

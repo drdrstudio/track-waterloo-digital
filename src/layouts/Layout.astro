@@ -1,0 +1,162 @@
+---
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "First-party attribution that actually works" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-T3RVDSL');</script>
+		<!-- End Google Tag Manager -->
+		
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://use.typekit.net/kqv8nxr.css">
+		
+		<style>
+			/* Custom Properties */
+			:root {
+				--color-primary: #7cd3d2;
+				--color-secondary: #eed36b;
+				--color-dark: #333;
+				--font-primary: "neue-kabel", -apple-system, BlinkMacSystemFont, sans-serif;
+			}
+			
+			/* Base Styles */
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-family: var(--font-primary);
+				line-height: 1.6;
+				color: var(--color-dark);
+			}
+			
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			
+			/* Typography */
+			h1, h2, h3, h4, h5, h6 {
+				font-family: var(--font-primary);
+				font-weight: 700;
+				line-height: 1.2;
+				margin-bottom: 1rem;
+			}
+			
+			h1 {
+				font-size: clamp(2.5rem, 5vw, 4rem);
+				text-transform: uppercase;
+			}
+			
+			h2 {
+				font-size: clamp(2rem, 4vw, 3rem);
+			}
+			
+			p {
+				margin-bottom: 1rem;
+				font-size: 1.125rem;
+			}
+			
+			/* Buttons */
+			.btn {
+				display: inline-block;
+				padding: 18px 40px;
+				background: var(--color-secondary);
+				color: var(--color-dark);
+				font-size: 18px;
+				font-weight: 600;
+				text-decoration: none;
+				border-radius: 5px;
+				transition: all 0.3s ease;
+				border: none;
+				cursor: pointer;
+			}
+			
+			.btn:hover {
+				background: #d4bd5c;
+				transform: translateY(-2px);
+			}
+			
+			.btn-primary {
+				background: var(--color-primary);
+				color: white;
+			}
+			
+			.btn-primary:hover {
+				background: #6ab9b8;
+			}
+			
+			/* Sections */
+			.section {
+				padding: 80px 0;
+			}
+			
+			.section-alt {
+				background: #f8f9fa;
+			}
+			
+			.hero {
+				background: linear-gradient(135deg, var(--color-primary) 0%, #5aa3a2 100%);
+				color: white;
+				text-align: center;
+				padding: 100px 0;
+			}
+			
+			.hero h1 {
+				margin-bottom: 20px;
+			}
+			
+			.hero p {
+				font-size: 22px;
+				opacity: 0.95;
+				max-width: 700px;
+				margin: 0 auto 40px;
+			}
+			
+			/* Responsive */
+			@media (max-width: 768px) {
+				.section {
+					padding: 60px 0;
+				}
+				
+				.hero {
+					padding: 80px 0;
+				}
+				
+				.btn {
+					padding: 16px 30px;
+					font-size: 16px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3RVDSL"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+		<slot />
+	</body>
+</html>

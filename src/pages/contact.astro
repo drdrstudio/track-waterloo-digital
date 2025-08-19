@@ -1,0 +1,206 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Get Your Free Attribution Audit - Waterloo Track" description="Get a free attribution audit and see exactly where your marketing data is broken.">
+	<main>
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="container">
+				<h1>See Exactly Where Your Attribution Is Broken</h1>
+				<p>Free audit. We'll analyze your current setup and show you exactly what you're missing. If we can't find significant attribution gaps, it's free.</p>
+			</div>
+		</section>
+
+		<!-- Contact Form Section -->
+		<section class="section">
+			<div class="container">
+				<div style="max-width: 800px; margin: 0 auto;">
+					<div style="display: grid; gap: 60px; grid-template-columns: 1fr 1fr;">
+						<!-- Form -->
+						<div>
+							<h2>Get Your Free Attribution Audit</h2>
+							<p>Tell us about your business and we'll show you exactly where your marketing data is incomplete.</p>
+							
+							<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="margin-top: 30px;">
+								<div style="margin-bottom: 20px;">
+									<label for="name" style="display: block; margin-bottom: 8px; font-weight: 600;">Name *</label>
+									<input type="text" id="name" name="name" required style="width: 100%; padding: 12px 16px; border: 2px solid #e9ecef; border-radius: 5px; font-size: 16px; font-family: var(--font-primary);">
+								</div>
+								
+								<div style="margin-bottom: 20px;">
+									<label for="email" style="display: block; margin-bottom: 8px; font-weight: 600;">Email *</label>
+									<input type="email" id="email" name="email" required style="width: 100%; padding: 12px 16px; border: 2px solid #e9ecef; border-radius: 5px; font-size: 16px; font-family: var(--font-primary);">
+								</div>
+								
+								<div style="margin-bottom: 20px;">
+									<label for="company" style="display: block; margin-bottom: 8px; font-weight: 600;">Company</label>
+									<input type="text" id="company" name="company" style="width: 100%; padding: 12px 16px; border: 2px solid #e9ecef; border-radius: 5px; font-size: 16px; font-family: var(--font-primary);">
+								</div>
+								
+								<div style="margin-bottom: 20px;">
+									<label for="role" style="display: block; margin-bottom: 8px; font-weight: 600;">Role *</label>
+									<select id="role" name="role" required style="width: 100%; padding: 12px 16px; border: 2px solid #e9ecef; border-radius: 5px; font-size: 16px; font-family: var(--font-primary); background: white;">
+										<option value="">Select your role</option>
+										<option value="business-owner">Business Owner</option>
+										<option value="marketing-director">Marketing Director/Manager</option>
+										<option value="agency-owner">Agency Owner</option>
+										<option value="other">Other</option>
+									</select>
+								</div>
+								
+								<div style="margin-bottom: 20px;">
+									<label for="ad-spend" style="display: block; margin-bottom: 8px; font-weight: 600;">Monthly Ad Spend</label>
+									<select id="ad-spend" name="ad-spend" style="width: 100%; padding: 12px 16px; border: 2px solid #e9ecef; border-radius: 5px; font-size: 16px; font-family: var(--font-primary); background: white;">
+										<option value="">Select range</option>
+										<option value="under-5k">Under $5,000</option>
+										<option value="5k-15k">$5,000 - $15,000</option>
+										<option value="15k-50k">$15,000 - $50,000</option>
+										<option value="over-50k">Over $50,000</option>
+									</select>
+								</div>
+								
+								<div style="margin-bottom: 30px;">
+									<label for="message" style="display: block; margin-bottom: 8px; font-weight: 600;">What's your biggest attribution challenge? *</label>
+									<textarea id="message" name="message" rows="4" required placeholder="e.g., Facebook and Google show different numbers, can't track which ads drive actual revenue, platforms take credit for conversions they didn't drive..." style="width: 100%; padding: 12px 16px; border: 2px solid #e9ecef; border-radius: 5px; font-size: 16px; font-family: var(--font-primary); resize: vertical;"></textarea>
+								</div>
+								
+								<button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 18px;">Get My Free Attribution Audit</button>
+							</form>
+							
+							<p style="font-size: 14px; color: #666; margin-top: 15px;">* We'll never spam you or share your information. Unsubscribe anytime.</p>
+						</div>
+						
+						<!-- What to Expect -->
+						<div>
+							<h3>What You'll Get</h3>
+							
+							<div style="margin-top: 30px;">
+								<div style="display: flex; gap: 15px; margin-bottom: 25px;">
+									<div style="background: #7cd3d2; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; flex-shrink: 0;">1</div>
+									<div>
+										<h4 style="margin-bottom: 8px;">Attribution Gap Analysis</h4>
+										<p style="margin: 0; font-size: 15px; line-height: 1.6;">We'll audit your current tracking setup and identify exactly where you're losing visibility into your customer journey.</p>
+									</div>
+								</div>
+								
+								<div style="display: flex; gap: 15px; margin-bottom: 25px;">
+									<div style="background: #7cd3d2; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; flex-shrink: 0;">2</div>
+									<div>
+										<h4 style="margin-bottom: 8px;">Revenue Impact Assessment</h4>
+										<p style="margin: 0; font-size: 15px; line-height: 1.6;">Calculate exactly how much money you're wasting on broken attribution and false positives.</p>
+									</div>
+								</div>
+								
+								<div style="display: flex; gap: 15px; margin-bottom: 25px;">
+									<div style="background: #7cd3d2; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; flex-shrink: 0;">3</div>
+									<div>
+										<h4 style="margin-bottom: 8px;">Custom Implementation Plan</h4>
+										<p style="margin: 0; font-size: 15px; line-height: 1.6;">Detailed roadmap showing exactly how to fix your attribution and what results to expect.</p>
+									</div>
+								</div>
+								
+								<div style="display: flex; gap: 15px;">
+									<div style="background: #7cd3d2; color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; flex-shrink: 0;">4</div>
+									<div>
+										<h4 style="margin-bottom: 8px;">30-Minute Strategy Call</h4>
+										<p style="margin: 0; font-size: 15px; line-height: 1.6;">Walk through your audit results and get your questions answered by our attribution experts.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div style="background: #f8f9fa; padding: 25px; border-radius: 8px; margin-top: 40px;">
+								<h4 style="color: #7cd3d2; margin-bottom: 15px;">Our Promise</h4>
+								<p style="margin: 0; font-size: 15px; line-height: 1.6;">If we can't identify at least $1,000/month in wasted ad spend or attribution gaps, your audit is completely free. No strings attached.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social Proof Section -->
+		<section class="section section-alt">
+			<div class="container">
+				<h2 style="text-align: center;">Join Businesses That Fixed Their Attribution</h2>
+				
+				<div style="display: grid; gap: 30px; margin-top: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+					<div style="background: white; padding: 25px; border-radius: 8px; border-left: 4px solid #7cd3d2;">
+						<p style="font-size: 16px; line-height: 1.7; margin-bottom: 15px; font-style: italic;">"The audit found $12k/month in wasted spend across campaigns that 'looked profitable' in Facebook. First month after fixing attribution, we reallocated that budget and saw 40% improvement in actual ROI."</p>
+						<p style="font-weight: 600; margin: 0;">– Marketing Director, SaaS Company</p>
+					</div>
+					
+					<div style="background: white; padding: 25px; border-radius: 8px; border-left: 4px solid #7cd3d2;">
+						<p style="font-size: 16px; line-height: 1.7; margin-bottom: 15px; font-style: italic;">"I was about to fire our agency because the numbers made no sense. Turns out attribution was just broken. Now I have complete visibility into which campaigns actually drive revenue."</p>
+						<p style="font-weight: 600; margin: 0;">– E-commerce Business Owner</p>
+					</div>
+					
+					<div style="background: white; padding: 25px; border-radius: 8px; border-left: 4px solid #7cd3d2;">
+						<p style="font-size: 16px; line-height: 1.7; margin-bottom: 15px; font-style: italic;">"Finally have attribution data I can present to the board with confidence. No more explaining why Facebook says we drove $200k but the bank account shows $150k."</p>
+						<p style="font-weight: 600; margin: 0;">– VP of Growth, Tech Startup</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section class="section">
+			<div class="container">
+				<h2 style="text-align: center;">Common Questions About Our Attribution Audit</h2>
+				
+				<div style="max-width: 800px; margin: 0 auto;">
+					<div style="display: grid; gap: 25px; margin-top: 40px;">
+						<div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+							<h3 style="color: #7cd3d2; margin-bottom: 10px; font-size: 18px;">How long does the audit take?</h3>
+							<p style="margin: 0;">The initial analysis takes 3-5 business days. We'll schedule a 30-minute call to review results and answer your questions.</p>
+						</div>
+						
+						<div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+							<h3 style="color: #7cd3d2; margin-bottom: 10px; font-size: 18px;">Do you need access to our accounts?</h3>
+							<p style="margin: 0;">We only need view access to analyze your setup. No changes are made during the audit process.</p>
+						</div>
+						
+						<div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+							<h3 style="color: #7cd3d2; margin-bottom: 10px; font-size: 18px;">What if you can't find any problems?</h3>
+							<p style="margin: 0;">If your attribution is already perfect (rare but possible), the audit is free. Most businesses have significant gaps they're not aware of.</p>
+						</div>
+						
+						<div style="padding: 20px; background: #f8f9fa; border-radius: 8px;">
+							<h3 style="color: #7cd3d2; margin-bottom: 10px; font-size: 18px;">Is there any obligation to work with you after?</h3>
+							<p style="margin: 0;">None. You'll get the full audit report and implementation plan regardless of whether you choose to work with us.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Final CTA Section -->
+		<section class="section section-alt">
+			<div class="container" style="text-align: center;">
+				<h2>Stop Guessing. Start Knowing.</h2>
+				<p>Every day you wait is another day of wasted ad spend and missed opportunities.</p>
+				<p style="font-size: 1.25rem; font-weight: 600; margin: 30px 0;">Get your free attribution audit today and see exactly where your money is going.</p>
+				<a href="#contact-form" class="btn btn-primary" onclick="document.querySelector('form input[name=name]').focus();">Get Your Free Audit Now</a>
+			</div>
+		</section>
+
+		<script>
+			// Simple scroll to form functionality
+			document.addEventListener('DOMContentLoaded', function() {
+				const links = document.querySelectorAll('a[href="#contact-form"]');
+				links.forEach(link => {
+					link.addEventListener('click', function(e) {
+						e.preventDefault();
+						document.querySelector('form').scrollIntoView({ 
+							behavior: 'smooth',
+							block: 'start'
+						});
+						setTimeout(() => {
+							document.querySelector('form input[name="name"]').focus();
+						}, 500);
+					});
+				});
+			});
+		</script>
+	</main>
+</Layout>
