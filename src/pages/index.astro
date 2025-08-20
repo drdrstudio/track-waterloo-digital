@@ -1,94 +1,91 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import LayoutModern from '../layouts/LayoutModern.astro';
 ---
 
-<Layout title="Waterloo Track - First-Party Attribution That Actually Works">
-	<main>
-		<!-- Hero Section -->
-		<section class="hero">
-			<div class="container">
-				<h1 class="head">First-Party Attribution<br><span class="yellow">That Actually Works</span></h1>
-				<p>Stop guessing which ads drive revenue. Own your data with privacy-compliant server-side tracking that's simple to implement.</p>
-				<a href="/for-agencies" class="btn">get started</a>
-			</div>
-		</section>
+<LayoutModern title="Waterloo Track - First-Party Attribution That Actually Works">
+	<!-- Hero Section -->
+	<section class="hero">
+		<div class="hero-content">
+			<h1>We help you <span class="accent">know</span> which ads actually work</h1>
+			<p>Stop guessing. Start knowing. First-party attribution that captures the 30% of conversions your platforms miss.</p>
+			<a href="/contact" class="btn">GET YOUR FREE AUDIT</a>
+		</div>
+	</section>
 
-		<!-- Problem Section -->
-		<section class="section">
-			<div class="container">
-				<h2>Your Attribution is Probably Broken</h2>
-				<p>iOS updates, privacy laws, and ad blockers have created blind spots in every marketing stack. You're making million-dollar decisions with about 70% of the data.</p>
-				
-				<div class="grid grid-3">
-					<div class="card">
-						<h3 class="subhead">Missing Conversions</h3>
-						<p>30% of your customers are invisible to your tracking. They're buying, but your platforms can't see them.</p>
-					</div>
-					<div class="card">
-						<h3 class="subhead">False Attribution</h3>
-						<p>Platforms take credit for conversions they didn't drive. Your worst campaigns look like winners.</p>
-					</div>
-					<div class="card">
-						<h3 class="subhead">Wasted Budget</h3>
-						<p>You're scaling losing campaigns and killing winning ones because the data is wrong.</p>
-					</div>
+	<!-- Problem Section -->
+	<section class="section">
+		<div class="container">
+			<h2>Your Attribution Is <span style="color: var(--color-primary);">Broken</span></h2>
+			<p style="font-size: 1.3rem; max-width: 800px;">iOS updates killed your tracking. Privacy laws made it worse. Now you're making million-dollar decisions with 70% of the data.</p>
+			
+			<div class="grid grid-3">
+				<div class="feature-box">
+					<h3>30% Blind Spot</h3>
+					<p>Nearly a third of your conversions are completely invisible to Facebook and Google.</p>
+				</div>
+				<div class="feature-box">
+					<h3>False Winners</h3>
+					<p>Platforms take credit for sales they didn't drive. Your worst campaigns look profitable.</p>
+				</div>
+				<div class="feature-box">
+					<h3>Wasted Budget</h3>
+					<p>You're scaling losers and killing winners because the data is fundamentally wrong.</p>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Solution Section -->
-		<section class="section section-alt">
-			<div class="container">
-				<h2>The Only Attribution Platform Where You Own Your Data AND Can Actually Use It</h2>
-				<p>We built Waterloo Track for businesses that need real attribution without the complexity of enterprise platforms.</p>
-				
-				<div class="grid grid-3">
-					<div class="feature-box">
-						<h3 class="subhead">For Marketing Agencies</h3>
-						<p>Get credit for your wins. Turn every client into recurring revenue. Stop losing accounts to attribution gaps.</p>
-						<a href="/for-agencies" class="btn">learn more</a>
-					</div>
-					<div class="feature-box">
-						<h3 class="subhead">For Business Owners</h3>
-						<p>Know if your ads actually work in 10 minutes. Stop paying for marketing based on faith and start using facts.</p>
-						<a href="/for-business-owners" class="btn">learn more</a>
-					</div>
-					<div class="feature-box">
-						<h3 class="subhead">For Marketing Directors</h3>
-						<p>Turn data chaos into boardroom confidence. Get attribution that finance actually trusts.</p>
-						<a href="/for-marketing-directors" class="btn">learn more</a>
-					</div>
+	<!-- Solution Section -->
+	<section class="section section-dark">
+		<div class="container">
+			<h2 style="color: var(--color-light);">The Only Attribution That <span style="color: var(--color-primary);">Actually Works</span></h2>
+			<p style="font-size: 1.3rem; max-width: 800px; margin-bottom: 60px;">Server-side tracking that captures everything. First-party data you own. Attribution that makes sense.</p>
+			
+			<div class="grid grid-3">
+				<div class="card">
+					<h3>For Agencies</h3>
+					<p>Turn attribution into recurring revenue. Get credit for your wins. Never lose another client to "poor performance" that's actually just broken tracking.</p>
+					<a href="/for-agencies" style="color: var(--color-primary); font-weight: 600;">Learn More →</a>
+				</div>
+				<div class="card">
+					<h3>For Business Owners</h3>
+					<p>See which ads actually make money in 10 minutes. Stop wasting thousands on campaigns that don't work.</p>
+					<a href="/for-business-owners" style="color: var(--color-primary); font-weight: 600;">Learn More →</a>
+				</div>
+				<div class="card">
+					<h3>For Marketing Directors</h3>
+					<p>Get attribution data that finance actually trusts. Turn data chaos into boardroom confidence.</p>
+					<a href="/for-marketing-directors" style="color: var(--color-primary); font-weight: 600;">Learn More →</a>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Social Proof Section -->
-		<section class="section">
-			<div class="container">
-				<h2>Trusted by Growing Businesses</h2>
-				<p>We've helped businesses achieve clear attribution for companies including Duarte Inc, The Army National Guard, and The Peach Truck.</p>
-				
-				<div class="grid grid-2">
-					<div class="card">
-						<p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px; font-style: italic;">"First month, we found massive waste across our accounts. Reallocated it. Clients thought we were geniuses. We just finally had real data."</p>
-						<p style="font-weight: 600;">Digital Marketing Agency</p>
-					</div>
-					
-					<div class="card">
-						<p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px; font-style: italic;">"I was about to shut down all my ads. Turns out, half were garbage but half were gold. Revenue up 40% in eight weeks."</p>
-						<p style="font-weight: 600;">E-commerce Business Owner</p>
-					</div>
+	<!-- Social Proof Section -->
+	<section class="section section-light">
+		<div class="container">
+			<h2 style="text-align: center;">Real Results From <span style="color: var(--color-primary);">Real Businesses</span></h2>
+			
+			<div class="grid grid-2">
+				<div class="card">
+					<p style="font-size: 1.2rem; font-style: italic; margin-bottom: 30px;">"Found $12k/month in wasted spend in the first week. Reallocated it. Revenue up 40% in two months."</p>
+					<p style="font-weight: 600; color: var(--color-gray);">E-commerce Brand</p>
+				</div>
+				<div class="card">
+					<p style="font-size: 1.2rem; font-style: italic; margin-bottom: 30px;">"Saved three client relationships by proving our campaigns were actually working. The platforms just couldn't see it."</p>
+					<p style="font-weight: 600; color: var(--color-gray);">Digital Marketing Agency</p>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- CTA Section -->
-		<section class="section" style="background: var(--color-primary); text-align: center;">
-			<div class="container">
-				<h2 style="color: white;">Ready to See What's Really Working?</h2>
-				<p style="color: white;">Get clear attribution in 7 days, not 7 weeks. Completely done-for-you setup.</p>
-				<a href="/contact" class="btn-secondary">get your free audit</a>
-			</div>
-		</section>
-	</main>
-</Layout>
+	<!-- CTA Section -->
+	<section class="section section-dark" style="text-align: center;">
+		<div class="container">
+			<h2 style="color: var(--color-light);">Ready to See What's <span style="color: var(--color-primary);">Really Working?</span></h2>
+			<p style="font-size: 1.3rem; margin-bottom: 50px;">Free attribution audit. We'll show you exactly what you're missing.</p>
+			<a href="/contact" class="btn">GET YOUR FREE AUDIT</a>
+			<p style="margin-top: 20px; opacity: 0.7;">If we can't find at least $1,000/month in wasted spend, the audit is free.</p>
+		</div>
+	</section>
+</LayoutModern>
